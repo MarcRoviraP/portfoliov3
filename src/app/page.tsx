@@ -14,13 +14,6 @@ import { motion } from 'framer-motion';
 export default function Home() {
   const [seccionActual, setSeccionActual] = useState('presentacion');
 
-  const handleWheel = (e: React.WheelEvent) => {
-    if (e.deltaY > 0) {
-      console.log('Scroll hacia ABAJO');
-    } else if (e.deltaY < 0) {
-      console.log('Scroll hacia ARRIBA');
-    }
-  };
 
   const handleButtonClick = (id: string) => {
     if (id === 'experiencia') {
@@ -45,7 +38,7 @@ export default function Home() {
   return (
     <main 
       className="flex min-h-screen flex-col items-center justify-between bg-gradient-to-b from-black via-gray-900 to-black text-white"
-      onWheel={handleWheel}
+ 
     >
       <Topbar onButtonClick={handleButtonClick} />
       
