@@ -1,0 +1,28 @@
+{
+    "experiencia": [
+        {
+        "funcion": "Estudiante de SMX",
+        "lugar": "IES Sant Vicent Ferrer",
+        "fecha": "Septiembre 2021 - Febrero 2023",
+        "descripcion": "Formación en Sistemas Microinformáticos y Redes en el IES Sant Vicent Ferrer de Algemesí. Adquisición de competencias en administración de sistemas operativos, redes locales, hardware y soporte técnico, estableciendo una base sólida en infraestructura TI."
+        },
+        {
+        "funcion": "Técnico de Sistemas",
+        "lugar": "Macrosoft",
+        "fecha": "Marzo 2023 - Junio 2023",
+        "descripcion": "Experiencia práctica en reparación y mantenimiento de equipos informáticos (ordenadores, impresoras y periféricos). Responsable de la configuración y resolución de problemas en redes empresariales, proporcionando soporte técnico de primera línea y garantizando la operatividad de la infraestructura tecnológica."
+        },
+        {
+        "funcion": "Estudiante de DAM",
+        "lugar": "IES Sant Vicent Ferrer",
+        "fecha": "Septiembre 2023 - Febrero 2025",
+        "descripcion": "Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma en el IES Sant Vicent Ferrer de Algemesí. Especialización en programación orientada a objetos, desarrollo web y móvil, bases de datos, y metodologías ágiles. Desarrollo de proyectos que integran múltiples tecnologías y plataformas."
+        },
+        {
+        "funcion": "Desarrollador de Software",
+        "lugar": "Imagina ITS",
+        "fecha": "Febrero 2025 - Mayo 2025",
+        "descripcion": "Participación activa en el desarrollo de ImaCash, una aplicación empresarial de gestión de efectivo. Implementación de funcionalidades utilizando C# con .NET Framework 4, diseño y optimización de bases de datos con SQL Server. Colaboración en equipo mediante control de versiones con Git y Gitea, aplicando buenas prácticas de desarrollo y metodologías colaborativas."
+        }
+    ]
+}

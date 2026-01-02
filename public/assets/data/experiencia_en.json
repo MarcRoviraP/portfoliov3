@@ -1,0 +1,28 @@
+{
+  "experiencia": [
+    {
+      "funcion": "SMX Student",
+      "lugar": "IES Sant Vicent Ferrer",
+      "fecha": "September 2021 - February 2023",
+      "descripcion": "Training in Microcomputer Systems and Networks at IES Sant Vicent Ferrer in Algemesí. Acquired competencies in operating system administration, local area networks, hardware, and technical support, establishing a solid foundation in IT infrastructure."
+    },
+    {
+      "funcion": "Systems Technician",
+      "lugar": "Macrosoft",
+      "fecha": "March 2023 - June 2023",
+      "descripcion": "Hands-on experience in repair and maintenance of IT equipment (computers, printers, and peripherals). Responsible for network configuration and troubleshooting in enterprise environments, providing first-line technical support and ensuring the operability of technological infrastructure."
+    },
+    {
+      "funcion": "DAM Student",
+      "lugar": "IES Sant Vicent Ferrer",
+      "fecha": "September 2023 - February 2025",
+      "descripcion": "Higher Degree in Multiplatform Application Development at IES Sant Vicent Ferrer in Algemesí. Specialization in object-oriented programming, web and mobile development, databases, and agile methodologies. Development of projects integrating multiple technologies and platforms."
+    },
+    {
+      "funcion": "Software Developer",
+      "lugar": "Imagina ITS",
+      "fecha": "February 2025 - May 2025",
+      "descripcion": "Active participation in the development of ImaCash, an enterprise cash management application. Implementation of features using C# with .NET Framework 4, database design and optimization with SQL Server. Team collaboration through version control with Git and Gitea, applying development best practices and collaborative methodologies."
+    }
+  ]
+}
