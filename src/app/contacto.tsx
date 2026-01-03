@@ -86,6 +86,25 @@ export default function Contacto() {
                 </motion.a>
             </div>
 
+            {/* Botón de descarga de CV */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8, duration: 0.6 }}
+                className="mt-12 flex justify-center"
+            >
+                <motion.a
+                    href="/CV_Marc_Rovira_Perello.pdf"
+                    download
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-red-500/50 transition-shadow duration-300 flex items-center gap-3"
+                >
+                    <span className="text-2xl">📄</span>
+                    {t('contact.downloadCV') || 'Descargar CV'}
+                </motion.a>
+            </motion.div>
+
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

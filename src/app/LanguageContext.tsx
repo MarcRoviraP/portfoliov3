@@ -53,6 +53,7 @@ const translations = {
     'contact.phone': 'Teléfono',
     'contact.email': 'Email',
     'contact.footer': 'Respondo lo más rápido posible. ¡Espero tu mensaje! 🚀',
+    'contact.downloadCV': 'Descargar CV',
   },
   en: {
     // Topbar
@@ -96,6 +97,7 @@ const translations = {
     'contact.phone': 'Phone',
     'contact.email': 'Email',
     'contact.footer': 'I respond as quickly as possible. Looking forward to your message! 🚀',
+    'contact.downloadCV': 'Download CV',
   },
 };
 
