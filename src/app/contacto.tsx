@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useLanguage } from './LanguageContext';
+import TypewriterText from './components/TypewriterText';
 
 export default function Contacto() {
     const { t } = useLanguage();
@@ -27,7 +28,7 @@ export default function Contacto() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
             >
-                {t('contact.subtitle')}
+                { <TypewriterText text={t('contact.subtitle')} /> }
             </motion.p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -41,7 +42,7 @@ export default function Contacto() {
                     transition={{ delay: 0.3, duration: 0.6 }}
                     whileHover={{ scale: 1.05, y: -5 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-8 shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300 flex flex-col items-center justify-center text-center group"
+                    className="bg-gray-800/50 rounded-xl p-8 shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300 flex flex-col items-center justify-center text-center group"
                 >
                     <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                         💼
@@ -58,7 +59,7 @@ export default function Contacto() {
                     transition={{ delay: 0.5, duration: 0.6 }}
                     whileHover={{ scale: 1.05, y: -5 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-gradient-to-br from-green-600 to-green-800 rounded-xl p-8 shadow-lg hover:shadow-green-500/50 transition-shadow duration-300 flex flex-col items-center justify-center text-center group"
+                    className="bg-gray-800/50 rounded-xl p-8 shadow-lg hover:shadow-green-500/50 transition-shadow duration-300 flex flex-col items-center justify-center text-center group"
                 >
                     <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                         📱
@@ -75,7 +76,7 @@ export default function Contacto() {
                     transition={{ delay: 0.7, duration: 0.6 }}
                     whileHover={{ scale: 1.05, y: -5 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-gradient-to-br from-red-600 to-pink-700 rounded-xl p-8 shadow-lg hover:shadow-red-500/50 transition-shadow duration-300 flex flex-col items-center justify-center text-center group"
+                    className="bg-gray-800/50 rounded-xl p-8 shadow-lg hover:shadow-red-500/50 transition-shadow duration-300 flex flex-col items-center justify-center text-center group"
                 >
                     <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                         ✉️

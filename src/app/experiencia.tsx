@@ -26,7 +26,7 @@ export default function Experiencia() {
       {/* Timeline Container */}
       <div className="max-w-5xl mx-auto relative">
         {/* Línea vertical del timeline */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hidden md:block"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500/70 via-purple-500/70 to-pink-500/70 hidden md:block"></div>
 
         {/* Items de experiencia */}
         <div className="space-y-12">

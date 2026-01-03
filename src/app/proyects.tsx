@@ -122,6 +122,20 @@ export default function Proyectos() {
                 <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
                   {proyecto.titulo}
                 </h3>
+                <div>
+                {proyecto.technologies.map((tech, i) => (
+                  <div key={i} className="inline-block mr-2">
+                    <Image 
+                      src={`/assets/tech_icos/${tech}.png`} 
+                      alt={tech} 
+                      width={30}
+                      height={30}
+                      className="inline-block"
+                    />
+                    <p>{tech}</p>
+                  </div>
+                ))
+                }</div>
 
                 {/* Descripción con animación */}
                 <div className={`transition-all duration-500 overflow-hidden ${

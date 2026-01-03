@@ -5,49 +5,56 @@
       "titulo": "Hundir La Flota",
       "descripcion": "Juego de Hundir La Flota. Creado con JAVA por terminal. Juego de 1 jugador contra la máquina.",
       "link": "https://github.com/MarcRoviraP/HundirLaFlotaJava",
-      "plataforma": "Escritorio"
+      "plataforma": "Escritorio",
+      "technologies": ["Java"]
     },
     {
       "imagen": "blackjack.png",
       "titulo": "Blackjack",
       "descripcion": "Juego de Blackjack. Creado con JAVA por terminal. Es multijugador. Cada jugador puede jugar contra la máquina o contra otros jugadores.",
       "link": "https://github.com/MarcRoviraP/BlackJack",
-      "plataforma": "Escritorio"
+      "plataforma": "Escritorio",
+      "technologies": ["Java"]
     },
     {
       "imagen": "calculator.png",
       "titulo": "Calculator",
       "descripcion": "Calculadora hecha con JavaFX para la interfaz gráfica. Soporta operaciones aritméticas básicas y un historial de cálculos.",
       "link": "https://github.com/MarcRoviraP/calculator/",
-      "plataforma": "Escritorio"
+      "plataforma": "Escritorio",
+      "technologies": ["Java", "JavaFX"]
     },
     {
       "imagen": "chess.png",
       "titulo": "Chess",
       "descripcion": "Este es un juego de ajedrez basado en Java que utiliza JavaFX para la interfaz gráfica y PostgreSQL para el almacenamiento de datos.",
       "link": "https://github.com/MarcRoviraP/chess",
-      "plataforma": "Escritorio"
+      "plataforma": "Escritorio",
+      "technologies": ["Java", "JavaFX", "PostgreSQL"]
     },
     {
       "imagen": "spaceinvaders.png",
       "titulo": "Space Invaders",
       "descripcion": "Juego creado con Python usando Pygame. Es un juego de 1 jugador contra la máquina. También con tema de 'Moros i Cristians'.",
       "link": "https://github.com/MarcRoviraP/Space_Invaders/",
-      "plataforma": "Escritorio"
+      "plataforma": "Escritorio",
+      "technologies": ["Python", "Pygame"]
     },
     {
       "imagen": "shoptogether.png",
       "titulo": "Shop Together",
       "descripcion": "Aplicación móvil para realizar listas de la compra cooperativas. Hecho con Kotlin. Utiliza Firebase como backend y almacenamiento de datos.",
       "link": "https://github.com/MarcRoviraP/ShopTogether",
-      "plataforma": "Móvil"
+      "plataforma": "Móvil",
+      "technologies": ["Android","Kotlin", "Firebase"]
     },
     {
       "imagen": "mybusiness.png",
       "titulo": "My Business",
       "descripcion": "Aplicación móvil de gestión de negocios. Hecho con Dart y Flutter. Utiliza Supabase como backend y almacenamiento de datos.",
       "link": "https://github.com/MarcRoviraP/MyBusiness",
-      "plataforma": "Móvil"
+      "plataforma": "Móvil",
+      "technologies": ["Dart", "Flutter", "Supabase"]
     }
     ,
     {
@@ -55,13 +62,15 @@
       "titulo": "Camara AI",
       "descripcion": "Aplicación móvil de cámara con inteligencia artificial. Hecho con Dart y Flutter. Utiliza la API de Gemini para el reconocimiento de imágenes y texto. Para con distintos prompts mostrar diferentes resultados.",
       "link": "https://github.com/MarcRoviraP/camara_ai",
-      "plataforma": "Móvil"
+      "plataforma": "Móvil",
+      "technologies": ["Dart", "Flutter", "Gemini"]
     },{
   "imagen": "mcs_ico.png",
   "titulo": "MCSManager",
   "descripcion": "Gestor ligero y moderno para servidores Minecraft Java. Crea, configura y administra mundos Vanilla, Forge, Fabric o NeoForge en 1 clic sin consolas. Multiplataforma (Windows / Linux) y sin líneas de comando.",
   "link": "https://github.com/MarcRoviraP/Gestor_Minecraft_Server",
-  "plataforma": "Escritorio"
+  "plataforma": "Escritorio",
+  "technologies": ["Python","PyQt"]
 }
   ]
 }
