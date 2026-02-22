@@ -73,7 +73,7 @@
       "technologies": ["Python", "PyQt"]
     },
     {
-      "imagen": "myOptimizer.ico",
+      "imagen": "myOptimizer.png",
       "titulo": "MyOptimizer",
       "descripcion": "Windows desktop application that automates file organization and optimization. It classifies files by extension, smartly removes duplicates, and manages configuration profiles through a GUI without touching any code.",
       "link": "https://github.com/MarcRoviraP/MyOptimizer",
