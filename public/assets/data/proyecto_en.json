@@ -46,7 +46,7 @@
       "descripcion": "Mobile app for creating cooperative shopping lists. Built with Kotlin. Uses Firebase for backend and data storage.",
       "link": "https://github.com/MarcRoviraP/ShopTogether",
       "plataforma": "Mobile",
-      "technologies": ["Android","Kotlin", "Firebase"]
+      "technologies": ["Android", "Kotlin", "Firebase"]
     },
     {
       "imagen": "mybusiness.png",
@@ -55,8 +55,7 @@
       "link": "https://github.com/MarcRoviraP/MyBusiness",
       "plataforma": "Mobile",
       "technologies": ["Dart", "Flutter", "Supabase"]
-    }
-    ,
+    },
     {
       "imagen": "camara_ai.png",
       "titulo": "Camara AI",
@@ -66,12 +65,20 @@
       "technologies": ["Dart", "Flutter", "Gemini"]
     },
     {
-  "imagen": "mcs_ico.png",
-  "titulo": "MCSManager",
-  "descripcion": "Lightweight modern manager for Minecraft Java servers. Create, configure and run Vanilla, Forge, Fabric or NeoForge worlds in 1 click—no console needed. Multi-platform (Windows / Linux) and 100 % GUI.",
-  "link": "https://github.com/MarcRoviraP/Gestor_Minecraft_Server",
-  "plataforma": "Desktop",
-  "technologies": ["Python","PyQt"]
-}
+      "imagen": "mcs_ico.png",
+      "titulo": "MCSManager",
+      "descripcion": "Lightweight modern manager for Minecraft Java servers. Create, configure and run Vanilla, Forge, Fabric or NeoForge worlds in 1 click—no console needed. Multi-platform (Windows / Linux) and 100 % GUI.",
+      "link": "https://github.com/MarcRoviraP/Gestor_Minecraft_Server",
+      "plataforma": "Desktop",
+      "technologies": ["Python", "PyQt"]
+    },
+    {
+      "imagen": "myOptimizer.ico",
+      "titulo": "MyOptimizer",
+      "descripcion": "Windows desktop application that automates file organization and optimization. It classifies files by extension, smartly removes duplicates, and manages configuration profiles through a GUI without touching any code.",
+      "link": "https://github.com/MarcRoviraP/MyOptimizer",
+      "plataforma": "Desktop",
+      "technologies": ["Python", "Flet"]
+    }
   ]
 }

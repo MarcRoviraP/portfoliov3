@@ -46,7 +46,7 @@
       "descripcion": "Aplicación móvil para realizar listas de la compra cooperativas. Hecho con Kotlin. Utiliza Firebase como backend y almacenamiento de datos.",
       "link": "https://github.com/MarcRoviraP/ShopTogether",
       "plataforma": "Móvil",
-      "technologies": ["Android","Kotlin", "Firebase"]
+      "technologies": ["Android", "Kotlin", "Firebase"]
     },
     {
       "imagen": "mybusiness.png",
@@ -55,8 +55,7 @@
       "link": "https://github.com/MarcRoviraP/MyBusiness",
       "plataforma": "Móvil",
       "technologies": ["Dart", "Flutter", "Supabase"]
-    }
-    ,
+    },
     {
       "imagen": "camara_ai.png",
       "titulo": "Camara AI",
@@ -64,13 +63,22 @@
       "link": "https://github.com/MarcRoviraP/camara_ai",
       "plataforma": "Móvil",
       "technologies": ["Dart", "Flutter", "Gemini"]
-    },{
-  "imagen": "mcs_ico.png",
-  "titulo": "MCSManager",
-  "descripcion": "Gestor ligero y moderno para servidores Minecraft Java. Crea, configura y administra mundos Vanilla, Forge, Fabric o NeoForge en 1 clic sin consolas. Multiplataforma (Windows / Linux) y sin líneas de comando.",
-  "link": "https://github.com/MarcRoviraP/Gestor_Minecraft_Server",
-  "plataforma": "Escritorio",
-  "technologies": ["Python","PyQt"]
-}
+    },
+    {
+      "imagen": "mcs_ico.png",
+      "titulo": "MCSManager",
+      "descripcion": "Gestor ligero y moderno para servidores Minecraft Java. Crea, configura y administra mundos Vanilla, Forge, Fabric o NeoForge en 1 clic sin consolas. Multiplataforma (Windows / Linux) y sin líneas de comando.",
+      "link": "https://github.com/MarcRoviraP/Gestor_Minecraft_Server",
+      "plataforma": "Escritorio",
+      "technologies": ["Python", "PyQt"]
+    },
+    {
+      "imagen": "myOptimizer.ico",
+      "titulo": "MyOptimizer",
+      "descripcion": "Aplicación de escritorio para Windows que automatiza la organización y optimización de archivos. Clasifica ficheros por extensión, elimina duplicados inteligentemente y gestiona perfiles mediante una interfaz gráfica, sin necesidad de editar código.",
+      "link": "https://github.com/MarcRoviraP/MyOptimizer",
+      "plataforma": "Desktop",
+      "technologies": ["Python", "Flet"]
+    }
   ]
 }
