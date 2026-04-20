@@ -87,6 +87,14 @@
       "link": "https://github.com/MarcRoviraP/Data-Detective",
       "plataforma": "Escritorio",
       "technologies": ["Python", "Flet", "Pandas"]
+    },
+    {
+      "imagen": "datafuelle.png",
+      "titulo": "DataFuelle",
+      "descripcion": "Aplicación web reactiva para consultar precios de combustible en tiempo real en España. Incluye mapa interactivo con semáforo de precios, gestión de descuentos personalizados y optimización para dispositivos móviles.",
+      "link": "https://github.com/MarcRoviraP/datafuelle",
+      "plataforma": "Web / Móvil",
+      "technologies": ["React", "TypeScript", "Vite", "Tailwind", "Leaflet", "Supabase", "Zustand"]
     }
   ]
 }
