@@ -79,6 +79,14 @@
       "link": "https://github.com/MarcRoviraP/MyOptimizer",
       "plataforma": "Desktop",
       "technologies": ["Python", "Flet"]
+    },
+    {
+      "imagen": "data_detective.png",
+      "titulo": "Data Detective - VLC Urban Intel",
+      "descripcion": "Urban intelligence platform for Valencia. It centralizes real-time and historical data for traffic (DGT), air quality (GVA), and weather (AVAMET/AEMET). Features advanced map visualizations, trend analysis, and technical report exporting.",
+      "link": "https://github.com/MarcRoviraP/Data-Detective",
+      "plataforma": "Desktop",
+      "technologies": ["Python", "Flet", "Pandas", "Matplotlib"]
     }
   ]
 }
