@@ -86,7 +86,7 @@
       "descripcion": "Plataforma de inteligencia urbana para Valencia. Centraliza datos en tiempo real e históricos de tráfico (DGT), calidad del aire (GVA) y meteorología (AVAMET/AEMET). Incluye visualización avanzada en mapas, análisis de tendencias y exportación de informes técnicos.",
       "link": "https://github.com/MarcRoviraP/Data-Detective",
       "plataforma": "Escritorio",
-      "technologies": ["Python", "Flet", "Pandas", "Matplotlib"]
+      "technologies": ["Python", "Flet", "Pandas"]
     }
   ]
 }
