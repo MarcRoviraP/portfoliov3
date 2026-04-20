@@ -32,6 +32,7 @@ const translations = {
     'projects.all': 'Todos',
     'projects.desktop': 'Escritorio',
     'projects.mobile': 'Móvil',
+    'projects.web': 'Web',
     'projects.viewGithub': 'Ver en GitHub',
     
     // Sobre Mí
@@ -76,6 +77,7 @@ const translations = {
     'projects.all': 'All',
     'projects.desktop': 'Desktop',
     'projects.mobile': 'Mobile',
+    'projects.web': 'Web',
     'projects.viewGithub': 'View on GitHub',
     
     // Sobre Mí

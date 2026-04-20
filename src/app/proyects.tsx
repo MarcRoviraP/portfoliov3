@@ -24,6 +24,7 @@ export default function Proyectos() {
       // Convertir a inglés
       if (filterValue === 'Escritorio') return 'Desktop';
       if (filterValue === 'Móvil') return 'Mobile';
+      if (filterValue === 'Web') return 'Web';
       return filterValue;
     }
   };
@@ -47,9 +48,9 @@ export default function Proyectos() {
 
       {/* Filtros */}
       <div className="flex justify-center gap-4 mb-16 flex-wrap">
-        {[t('projects.all'), t('projects.desktop'), t('projects.mobile')].map((cat, idx) => {
-          const filterValue = ['Todos', 'Escritorio', 'Móvil'][idx];
-          const englishFilter = ['All', 'Desktop', 'Mobile'][idx];
+        {[t('projects.all'), t('projects.desktop'), t('projects.mobile'), t('projects.web')].map((cat, idx) => {
+          const filterValue = ['Todos', 'Escritorio', 'Móvil', 'Web'][idx];
+          const englishFilter = ['All', 'Desktop', 'Mobile', 'Web'][idx];
           return (
             <button
               key={cat}
@@ -65,7 +66,7 @@ export default function Proyectos() {
                 <span className="ml-2 px-2 py-0.5 bg-white/20 rounded-full text-xs">
                   {proyectosData.proyecto.filter(p => {
                     const mappedFilter = language === 'es' ? filterValue : 
-                      (filterValue === 'Escritorio' ? 'Desktop' : filterValue === 'Móvil' ? 'Mobile' : filterValue);
+                      (filterValue === 'Escritorio' ? 'Desktop' : filterValue === 'Móvil' ? 'Mobile' : filterValue === 'Web' ? 'Web' : filterValue);
                     return p.plataforma === mappedFilter;
                   }).length}
                 </span>
@@ -112,9 +113,11 @@ export default function Proyectos() {
                   <span className={`px-3 py-1 rounded-full text-xs font-bold ${
                     proyecto.plataforma === 'Móvil' || proyecto.plataforma === 'Mobile'
                       ? 'bg-gradient-to-r from-green-500 to-emerald-500'
+                      : proyecto.plataforma === 'Web'
+                      ? 'bg-gradient-to-r from-purple-500 to-pink-500'
                       : 'bg-gradient-to-r from-blue-500 to-cyan-500'
                   } text-white shadow-lg`}>
-                    {(proyecto.plataforma === 'Móvil' || proyecto.plataforma === 'Mobile') ? `📱 ${t('projects.mobile')}` : `💻 ${t('projects.desktop')}`}
+                    {proyecto.plataforma === 'Web' ? `🌐 ${t('projects.web')}` : (proyecto.plataforma === 'Móvil' || proyecto.plataforma === 'Mobile') ? `📱 ${t('projects.mobile')}` : `💻 ${t('projects.desktop')}`}
                   </span>
                 </div>
 
