@@ -93,7 +93,8 @@
       "titulo": "DataFuelle",
       "descripcion": "Aplicación web reactiva para consultar precios de combustible en tiempo real en España. Incluye mapa interactivo con semáforo de precios, gestión de descuentos personalizados y optimización para dispositivos móviles.",
       "link": "https://github.com/MarcRoviraP/datafuelle",
-      "plataforma": "Web / Móvil",
+      "url_web": "https://datafuelle.netlify.app/",
+      "plataforma": "Web",
       "technologies": ["React", "TypeScript", "Vite", "Tailwind", "Leaflet", "Supabase", "Zustand"]
     }
   ]

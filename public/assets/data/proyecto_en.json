@@ -93,7 +93,8 @@
       "titulo": "DataFuelle",
       "descripcion": "Reactive web application for checking real-time fuel prices in Spain. Features an interactive map with price-based color coding, custom discount management, and mobile-first optimization.",
       "link": "https://github.com/MarcRoviraP/datafuelle",
-      "plataforma": "Web / Mobile",
+      "url_web": "https://datafuelle.netlify.app/",
+      "plataforma": "Web",
       "technologies": ["React", "TypeScript", "Vite", "Tailwind", "Leaflet", "Supabase", "Zustand"]
     }
   ]

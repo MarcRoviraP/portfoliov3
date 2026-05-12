@@ -22,6 +22,8 @@ const translations = {
     'home.greeting': 'Hola, soy Marc',
     'home.title': 'Desarrollador Full Stack',
     'home.description': 'Apasionado por crear soluciones digitales innovadoras y eficientes. Con experiencia en tecnologías modernas y un enfoque en la calidad del código.',
+    'home.hobby1': 'Jugar al tenis',
+    'home.hobby2': 'Investigar tecnologías',
     
     // Experiencia
     'experience.title': 'Experiencia Profesional',
@@ -34,6 +36,7 @@ const translations = {
     'projects.mobile': 'Móvil',
     'projects.web': 'Web',
     'projects.viewGithub': 'Ver en GitHub',
+    'projects.viewWeb': 'Visitar Web',
     
     // Sobre Mí
     'about.title': 'Sobre Mí',
@@ -67,6 +70,8 @@ const translations = {
     'home.greeting': 'Hi, I\'m Marc',
     'home.title': 'Full Stack Developer',
     'home.description': 'Passionate about creating innovative and efficient digital solutions. With experience in modern technologies and a focus on code quality.',
+    'home.hobby1': 'Playing tennis',
+    'home.hobby2': 'Researching tech',
     
     // Experiencia
     'experience.title': 'Professional Experience',
@@ -79,6 +84,7 @@ const translations = {
     'projects.mobile': 'Mobile',
     'projects.web': 'Web',
     'projects.viewGithub': 'View on GitHub',
+    'projects.viewWeb': 'Visit Web',
     
     // Sobre Mí
     'about.title': 'About Me',
