@@ -23,6 +23,12 @@
         "lugar": "Imagina ITS",
         "fecha": "Febrero 2025 - Mayo 2025",
         "descripcion": "Participación activa en el desarrollo de ImaCash, una aplicación empresarial de gestión de efectivo. Implementación de funcionalidades utilizando C# con .NET Framework 4, diseño y optimización de bases de datos con SQL Server. Colaboración en equipo mediante control de versiones con Git y Gitea, aplicando buenas prácticas de desarrollo y metodologías colaborativas."
+        },
+        {
+        "funcion": "Curso de Especialización de Inteligencia Artificial y Big Data",
+        "lugar": "IES Sant Vicent Ferrer",
+        "fecha": "Septiembre 2025 - Junio 2026",
+        "descripcion": "Especialización técnica centrada en arquitecturas de datos a gran escala. Experiencia práctica en la gestión de Big Data y optimización de grandes volúmenes de información para maximizar el rendimiento. Desarrollo de soluciones de Inteligencia Artificial avanzadas integrando técnicas de Generación Aumentada por Recuperación (RAG) y motores de búsquedas vectoriales para enriquecer y precisar los resultados de los modelos."
         }
     ]
 }

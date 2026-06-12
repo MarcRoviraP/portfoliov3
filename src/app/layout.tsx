@@ -19,6 +19,8 @@ export const metadata: Metadata = {
 
 };
 
+import { AnimatedBackground } from "./components/AnimatedBackground";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,8 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white relative min-h-screen`}
+        suppressHydrationWarning
       >
+        <AnimatedBackground />
         <LanguageProvider>
           {children}
         </LanguageProvider>

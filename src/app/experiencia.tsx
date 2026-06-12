@@ -14,7 +14,7 @@ export default function Experiencia() {
   const experienciaData = language === 'es' ? experienciaDataEs : experienciaDataEn;
 
   return (
-    <div className="min-h-screen w-full py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
+    <div className="min-h-screen w-full py-20 px-4 relative z-10">
       {/* Título con animación */}
       <div className="text-center mb-16 animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse-slow">

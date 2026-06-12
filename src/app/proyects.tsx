@@ -1,16 +1,19 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import proyectosDataEs from '../../public/assets/data/proyecto_es.json';
 import proyectosDataEn from '../../public/assets/data/proyecto_en.json';
 import Image from 'next/image';
 import { useLanguage } from './LanguageContext';
+import { AnimatePresence, motion } from 'framer-motion';
 
 
 export default function Proyectos() {
   const [filtro, setFiltro] = useState<string>('Todos');
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [galeriaActiva, setGaleriaActiva] = useState<string[] | null>(null);
+  const [imagenActualIndex, setImagenActualIndex] = useState<number>(0);
   const { language, t } = useLanguage();
   
   const proyectosData = language === 'es' ? proyectosDataEs : proyectosDataEn;
@@ -29,12 +32,13 @@ export default function Proyectos() {
     }
   };
 
-  const proyectosFiltrados = filtro === 'Todos' 
-    ? proyectosData.proyecto 
-    : proyectosData.proyecto.filter(p => p.plataforma === getPlataformaFilter(filtro));
+  const proyectosFiltrados = (filtro === 'Todos' 
+    ? [...proyectosData.proyecto] 
+    : proyectosData.proyecto.filter(p => p.plataforma === getPlataformaFilter(filtro))
+  ).reverse();
 
   return (
-    <div className="min-h-screen w-full py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
+    <div className="min-h-screen w-full py-20 px-4 relative z-10">
       {/* Título animado */}
       <div className="text-center mb-12 animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
@@ -96,7 +100,7 @@ export default function Proyectos() {
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-cyan-500/10 to-purple-500/10">
                   {/* Placeholder para la imagen - reemplaza con tu imagen real */}
                   <div className="text-6xl opacity-20">
-                    <Image src={`/assets/proyects_thumbnails/${proyecto.imagen}`} alt={proyecto.titulo} layout="fill" objectFit="cover" />
+                    <Image src={`/assets/proyects_thumbnails/${(proyecto as any).folder}/${proyecto.imagen}`} alt={proyecto.titulo} layout="fill" objectFit="cover" />
                   </div>
                 </div>
               </div>
@@ -145,22 +149,22 @@ export default function Proyectos() {
                     ))}
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="flex flex-wrap gap-2">
                     {/* Botón de GitHub */}
                     <a
                       href={proyecto.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 ${
+                      className={`flex-1 flex items-center justify-center gap-1.5 px-2 py-2 ${
                         'url_web' in proyecto 
                           ? 'bg-gray-800/80 border border-gray-700 hover:bg-gray-700' 
                           : 'bg-gradient-to-r from-cyan-500 to-blue-500 hover:shadow-cyan-500/50'
-                      } text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-lg transform hover:scale-105 ${
+                      } text-white rounded-lg text-sm font-semibold whitespace-nowrap transition-all duration-300 hover:shadow-lg transform hover:scale-105 ${
                         hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
                       }`}
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                       </svg>
                       {t('projects.viewGithub')}
@@ -172,16 +176,44 @@ export default function Proyectos() {
                         href={(proyecto as any).url_web}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105 ${
+                        className={`flex-1 flex items-center justify-center gap-1.5 px-2 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg text-sm font-semibold whitespace-nowrap transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50 transform hover:scale-105 ${
                           hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
                         }`}
                         onClick={(e) => e.stopPropagation()}
                       >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
                         {t('projects.viewWeb')}
                       </a>
+                    )}
+                    
+                    {/* Botón de Galería */}
+                    {(proyecto as any).folder && (
+                      <button
+                        onClick={async (e) => {
+                          e.stopPropagation();
+                          try {
+                            const res = await fetch(`/api/gallery?folder=${(proyecto as any).folder}`);
+                            const data = await res.json();
+                            if (data.files && data.files.length > 0) {
+                              setGaleriaActiva(data.files.map((f: string) => `${(proyecto as any).folder}/${f}`));
+                              setImagenActualIndex(0);
+                            }
+                          } catch (error) {
+                            console.error("Error cargando la galería", error);
+                          }
+                        }}
+                        className={`flex-1 flex items-center justify-center gap-1.5 px-2 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg text-sm font-semibold whitespace-nowrap transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105 ${
+                          hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+                        }`}
+                        title="Ver Galería"
+                      >
+                        <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        {t('projects.gallery') || 'Galería'}
+                      </button>
                     )}
                 </div>
               </div>
@@ -275,6 +307,92 @@ export default function Proyectos() {
           animation: float 15s ease-in-out infinite;
         }
       `}</style>
+      {/* Modal de Galería */}
+      <AnimatePresence>
+        {galeriaActiva && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+            onClick={() => setGaleriaActiva(null)}
+          >
+            <div className="relative max-w-5xl w-full max-h-[90vh] flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+              
+              {/* Cerrar */}
+              <button
+                onClick={() => setGaleriaActiva(null)}
+                className="absolute -top-12 right-0 text-white hover:text-cyan-400 transition-colors bg-gray-900/80 rounded-full p-2"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+
+              {/* Controles izq */}
+              {galeriaActiva.length > 1 && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setImagenActualIndex((prev) => (prev === 0 ? galeriaActiva.length - 1 : prev - 1));
+                  }}
+                  className="absolute left-2 md:-left-12 text-white hover:text-cyan-400 transition-colors bg-gray-900/80 rounded-full p-2 z-10"
+                >
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              )}
+
+              {/* Imagen */}
+              <motion.div
+                key={imagenActualIndex}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                className="relative w-full h-[60vh] md:h-[80vh] rounded-xl overflow-hidden shadow-2xl shadow-cyan-500/20"
+              >
+                <Image
+                  src={`/assets/proyects_thumbnails/${galeriaActiva[imagenActualIndex]}`}
+                  alt={`Galería ${imagenActualIndex + 1}`}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </motion.div>
+
+              {/* Controles der */}
+              {galeriaActiva.length > 1 && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setImagenActualIndex((prev) => (prev === galeriaActiva.length - 1 ? 0 : prev + 1));
+                  }}
+                  className="absolute right-2 md:-right-12 text-white hover:text-cyan-400 transition-colors bg-gray-900/80 rounded-full p-2 z-10"
+                >
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              )}
+
+              {/* Indicadores */}
+              {galeriaActiva.length > 1 && (
+                <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
+                  {galeriaActiva.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setImagenActualIndex(idx)}
+                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        idx === imagenActualIndex ? 'bg-cyan-400 scale-125' : 'bg-gray-600 hover:bg-gray-400'
+                      }`}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

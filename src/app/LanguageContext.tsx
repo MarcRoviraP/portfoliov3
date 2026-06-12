@@ -37,6 +37,7 @@ const translations = {
     'projects.web': 'Web',
     'projects.viewGithub': 'Ver en GitHub',
     'projects.viewWeb': 'Visitar Web',
+    'projects.gallery': 'Galería',
     
     // Sobre Mí
     'about.title': 'Sobre Mí',
@@ -85,6 +86,7 @@ const translations = {
     'projects.web': 'Web',
     'projects.viewGithub': 'View on GitHub',
     'projects.viewWeb': 'Visit Web',
+    'projects.gallery': 'Gallery',
     
     // Sobre Mí
     'about.title': 'About Me',

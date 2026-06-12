@@ -1,101 +1,157 @@
 {
   "proyecto": [
     {
-      "imagen": "hundir_la_flota.png",
+      "imagen": "hundir_la_flota.webp",
       "titulo": "Hundir La Flota",
       "descripcion": "Battleship game created in JAVA for the terminal. Single-player mode against the machine.",
       "link": "https://github.com/MarcRoviraP/HundirLaFlotaJava",
       "plataforma": "Desktop",
-      "technologies": ["Java"]
+      "technologies": [
+        "Java"
+      ],
+      "folder": "hundir_la_flota"
     },
     {
-      "imagen": "blackjack.png",
+      "imagen": "blackjack.webp",
       "titulo": "Blackjack",
       "descripcion": "Blackjack game created in JAVA for the terminal. Supports multiplayer mode. Players can compete against the machine or each other.",
       "link": "https://github.com/MarcRoviraP/BlackJack",
       "plataforma": "Desktop",
-      "technologies": ["Java"]
+      "technologies": [
+        "Java"
+      ],
+      "folder": "blackjack"
     },
     {
-      "imagen": "calculator.png",
+      "imagen": "calculator.webp",
       "titulo": "Calculator",
       "descripcion": "Calculator built using JavaFX for the graphical interface. Supports basic arithmetic operations and history of calculations.",
       "link": "https://github.com/MarcRoviraP/calculator/",
       "plataforma": "Desktop",
-      "technologies": ["Java", "JavaFX"]
+      "technologies": [
+        "Java",
+        "JavaFX"
+      ],
+      "folder": "calculator"
     },
     {
-      "imagen": "chess.png",
+      "imagen": "chess.webp",
       "titulo": "Chess",
       "descripcion": "A Java-based chess game using JavaFX for the graphical interface and PostgreSQL for data storage.",
       "link": "https://github.com/MarcRoviraP/chess",
       "plataforma": "Desktop",
-      "technologies": ["Java", "JavaFX", "PostgreSQL"]
+      "technologies": [
+        "Java",
+        "JavaFX",
+        "PostgreSQL"
+      ],
+      "folder": "chess"
     },
     {
-      "imagen": "spaceinvaders.png",
+      "imagen": "spaceinvaders.webp",
       "titulo": "Space Invaders",
       "descripcion": "Single-player game created with Python and Pygame. Features a 'Moros i Cristians' theme.",
       "link": "https://github.com/MarcRoviraP/Space_Invaders/",
       "plataforma": "Desktop",
-      "technologies": ["Python", "Pygame"]
+      "technologies": [
+        "Python",
+        "Pygame"
+      ],
+      "folder": "spaceinvaders"
     },
     {
-      "imagen": "shoptogether.png",
+      "imagen": "shoptogether.webp",
       "titulo": "Shop Together",
       "descripcion": "Mobile app for creating cooperative shopping lists. Built with Kotlin. Uses Firebase for backend and data storage.",
       "link": "https://github.com/MarcRoviraP/ShopTogether",
       "plataforma": "Mobile",
-      "technologies": ["Android", "Kotlin", "Firebase"]
+      "technologies": [
+        "Android",
+        "Kotlin",
+        "Firebase"
+      ],
+      "folder": "shoptogether"
     },
     {
-      "imagen": "mybusiness.png",
+      "imagen": "mybusiness.webp",
       "titulo": "My Business",
       "descripcion": "Mobile business management app. Built with Dart and Flutter. Uses Supabase for backend and data storage.",
       "link": "https://github.com/MarcRoviraP/MyBusiness",
       "plataforma": "Mobile",
-      "technologies": ["Dart", "Flutter", "Supabase"]
+      "technologies": [
+        "Dart",
+        "Flutter",
+        "Supabase"
+      ],
+      "folder": "mybusiness"
     },
     {
-      "imagen": "camara_ai.png",
+      "imagen": "camara_ai.webp",
       "titulo": "Camara AI",
       "descripcion": "Mobile camera app with artificial intelligence. Built with Dart and Flutter. Uses the Gemini API for image and text recognition. Displays different results based on various prompts.",
       "link": "https://github.com/MarcRoviraP/camara_ai",
       "plataforma": "Mobile",
-      "technologies": ["Dart", "Flutter", "Gemini"]
+      "technologies": [
+        "Dart",
+        "Flutter",
+        "Gemini"
+      ],
+      "folder": "camara_ai"
     },
     {
-      "imagen": "mcs_ico.png",
+      "imagen": "mcs_ico.webp",
       "titulo": "MCSManager",
       "descripcion": "Lightweight modern manager for Minecraft Java servers. Create, configure and run Vanilla, Forge, Fabric or NeoForge worlds in 1 click—no console needed. Multi-platform (Windows / Linux) and 100 % GUI.",
       "link": "https://github.com/MarcRoviraP/Gestor_Minecraft_Server",
       "plataforma": "Desktop",
-      "technologies": ["Python", "PyQt"]
+      "technologies": [
+        "Python",
+        "PyQt"
+      ],
+      "folder": "mcs_ico"
     },
     {
-      "imagen": "myOptimizer.png",
+      "imagen": "myOptimizer.webp",
       "titulo": "MyOptimizer",
       "descripcion": "Windows desktop application that automates file organization and optimization. It classifies files by extension, smartly removes duplicates, and manages configuration profiles through a GUI without touching any code.",
       "link": "https://github.com/MarcRoviraP/MyOptimizer",
       "plataforma": "Desktop",
-      "technologies": ["Python", "Flet"]
+      "technologies": [
+        "Python",
+        "Flet"
+      ],
+      "folder": "myOptimizer"
     },
     {
-      "imagen": "data_detective.png",
+      "imagen": "data_detective.webp",
       "titulo": "Data Detective - VLC Urban Intel",
       "descripcion": "Urban intelligence platform for Valencia. It centralizes real-time and historical data for traffic (DGT), air quality (GVA), and weather (AVAMET/AEMET). Features advanced map visualizations, trend analysis, and technical report exporting.",
       "link": "https://github.com/MarcRoviraP/Data-Detective",
       "plataforma": "Desktop",
-      "technologies": ["Python", "Flet", "Pandas"]
+      "technologies": [
+        "Python",
+        "Flet",
+        "Pandas"
+      ],
+      "folder": "data_detective"
     },
     {
-      "imagen": "datafuelle.png",
+      "imagen": "datafuelle.webp",
       "titulo": "DataFuelle",
       "descripcion": "Reactive web application for checking real-time fuel prices in Spain. Features an interactive map with price-based color coding, custom discount management, and mobile-first optimization.",
       "link": "https://github.com/MarcRoviraP/datafuelle",
       "url_web": "https://datafuelle.netlify.app/",
       "plataforma": "Web",
-      "technologies": ["React", "TypeScript", "Vite", "Tailwind", "Leaflet", "Supabase", "Zustand"]
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind",
+        "Leaflet",
+        "Supabase",
+        "Zustand"
+      ],
+      "folder": "datafuelle"
     }
   ]
 }

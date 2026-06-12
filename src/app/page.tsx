@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <main 
-      className="flex min-h-screen flex-col items-center justify-between bg-gradient-to-b from-black via-gray-900 to-black text-white"
+      className="flex min-h-screen flex-col items-center justify-between text-white relative z-10"
  
     >
       <Topbar onButtonClick={handleButtonClick} />
@@ -51,13 +51,7 @@ export default function Home() {
       
       
       <motion.div className="mt-8" whileHover={{ scale: 1.3 }} onTap={() => window.scrollTo({ top: 0, behavior: 'smooth' })} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <Image
-          src="/up.ico"
-          alt="Profile Picture"
-          width={200}
-          height={200}
-          className="rounded-full"
-        />
+      
       </motion.div>
     </main>
   );

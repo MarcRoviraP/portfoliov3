@@ -23,6 +23,12 @@
       "lugar": "Imagina ITS",
       "fecha": "February 2025 - May 2025",
       "descripcion": "Active participation in the development of ImaCash, an enterprise cash management application. Implementation of features using C# with .NET Framework 4, database design and optimization with SQL Server. Team collaboration through version control with Git and Gitea, applying development best practices and collaborative methodologies."
+    },
+    {
+      "funcion": "Specialization Course in Artificial Intelligence and Big Data",
+      "lugar": "IES Sant Vicent Ferrer",
+      "fecha": "September 2025 - June 2026",
+      "descripcion": "Technical specialization focused on large-scale data architectures. Practical experience in Big Data management and optimization of massive data volumes to maximize performance. Development of advanced Artificial Intelligence solutions integrating Retrieval-Augmented Generation (RAG) techniques and vector search engines to enrich and refine model outputs."
     }
   ]
 }
