@@ -152,6 +152,20 @@
         "Zustand"
       ],
       "folder": "datafuelle"
+    },
+    {
+      "imagen": "deeptutor.webp",
+      "titulo": "DeepTutor",
+      "descripcion": "Plataforma web de aprendizaje de programación con un tutor virtual basado en Inteligencia Artificial. Conecta teoría y práctica mediante un IDE integrado para ejecutar código (Python, Lua, Java) de forma segura. Utiliza RAG con PostgreSQL y pgvector para ofrecer mentoría personalizada adaptada al nivel del estudiante.",
+      "link": "https://github.com/MarcRoviraP/DeepTutor",
+      "plataforma": "Web",
+      "technologies": [
+        "IA",
+        "RAG",
+        "PostgreSQL",
+        "pgvector"
+      ],
+      "folder": "deeptutor"
     }
   ]
 }
