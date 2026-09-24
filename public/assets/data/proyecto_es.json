@@ -166,6 +166,18 @@
         "pgvector"
       ],
       "folder": "deeptutor"
+    },
+    {
+      "imagen": "stockcounter.png",
+      "titulo": "Stock Counter",
+      "descripcion": "Aplicación móvil y multiplataforma para control de stock e inventario en tiempo real. Soporta ajustes incrementales, auditoría de cambios y métricas de balance. Desarrollada con arquitectura limpia y TDD.",
+      "link": "https://github.com/MarcRoviraP/StockCounter",
+      "plataforma": "Móvil",
+      "technologies": [
+        "Dart",
+        "Flutter"
+      ],
+      "folder": "stockcounter"
     }
   ]
 }
