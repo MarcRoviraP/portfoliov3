@@ -125,8 +125,8 @@ export default function Proyectos() {
                   </span>
                 </div>
 
-                  <div className={`transition-all duration-500 overflow-hidden ${
-                    hoveredIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                  <div className={`transition-all duration-500 ${
+                    hoveredIndex === index ? 'max-h-48 overflow-y-auto pr-1 opacity-100' : 'max-h-0 overflow-hidden opacity-0'
                   }`}>
                     <p className="text-gray-300 text-sm leading-relaxed mb-4">
                       {proyecto.descripcion}

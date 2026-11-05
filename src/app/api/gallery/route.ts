@@ -12,7 +12,10 @@ export async function GET(request: Request) {
 
   const dir = path.join(process.cwd(), 'public/assets/proyects_thumbnails', folder);
   try {
-    const files = fs.readdirSync(dir).filter(file => file.match(/\.(png|jpe?g|gif|webp)$/i));
+    const files = fs
+      .readdirSync(dir)
+      .filter(file => file.match(/\.(png|jpe?g|gif|webp)$/i))
+      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
     return NextResponse.json({ files });
   } catch (error) {
     return NextResponse.json({ error: 'Folder not found' }, { status: 404 });

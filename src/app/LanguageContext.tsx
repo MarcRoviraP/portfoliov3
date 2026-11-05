@@ -41,14 +41,12 @@ const translations = {
     
     // Sobre Mí
     'about.title': 'Sobre Mí',
-    'about.intro': 'Me llamo',
-    'about.description': 'Empecé con la informática a los 15 años y desde entonces no he parado de aprender. Me encanta el mundo de la programación y la tecnología en general.',
-    'about.competitions': '🏆 Competiciones',
-    'about.competitionsDesc': 'He participado en concursos de programación como',
-    'about.competitionsDesc2': 'donde he podido poner a prueba mis habilidades y aprender de otros programadores.',
-    'about.projects': '💡 Proyectos y Aprendizaje',
-    'about.projectsDesc': 'He creado diversos proyectos personales que me han permitido experimentar con diferentes tecnologías y metodologías. Me gusta aprender constantemente y compartir conocimiento con la comunidad.',
-    'about.quote': '"La pasión por la tecnología y el aprendizaje continuo son el motor que impulsa mi carrera como desarrollador."',
+    'about.p1': 'Soy desarrollador de soluciones digitales, con interés en crear productos tecnológicos que resuelvan problemas reales y aporten valor.',
+    'about.p2': 'Me gusta abordar el desarrollo de software desde una perspectiva global: comprender las necesidades de un proyecto, investigar las tecnologías adecuadas y construir soluciones que conecten frontend, backend, bases de datos y servicios externos.',
+    'about.p3': 'Trabajo en el desarrollo de aplicaciones web, soluciones multiplataforma y servicios backend, con tecnologías como Java, Python, React, Flutter, FastAPI, SQL y PostgreSQL.',
+    'about.p4': 'Disfruto especialmente integrando APIs, conectando sistemas y automatizando procesos. También utilizo herramientas de inteligencia artificial para investigar, aprender nuevas tecnologías, desarrollar funcionalidades y optimizar código.',
+    'about.p5': 'Me considero una persona autónoma, práctica y resolutiva, con facilidad para aprender y adaptarme a nuevos entornos tecnológicos.',
+    'about.p6': 'Busco seguir creciendo profesionalmente participando en proyectos donde pueda transformar ideas en soluciones digitales funcionales y contribuir a construir productos tecnológicos.',
     
     // Contacto
     'contact.title': 'Contacto',
@@ -90,14 +88,12 @@ const translations = {
     
     // Sobre Mí
     'about.title': 'About Me',
-    'about.intro': 'My name is',
-    'about.description': 'I started with computers at 15 years old and since then I haven\'t stopped learning. I love the world of programming and technology in general.',
-    'about.competitions': '🏆 Competitions',
-    'about.competitionsDesc': 'I have participated in programming contests such as',
-    'about.competitionsDesc2': 'where I was able to test my skills and learn from other programmers.',
-    'about.projects': '💡 Projects and Learning',
-    'about.projectsDesc': 'I have created various personal projects that have allowed me to experiment with different technologies and methodologies. I like to constantly learn and share knowledge with the community.',
-    'about.quote': '"The passion for technology and continuous learning are the driving force behind my career as a developer."',
+    'about.p1': 'I am a digital solutions developer, interested in building technological products that solve real problems and provide value.',
+    'about.p2': 'I like to approach software development from a global perspective: understanding the needs of a project, researching the right technologies, and building solutions that bridge frontend, backend, databases, and external services.',
+    'about.p3': 'I work on the development of web applications, cross-platform solutions, and backend services using technologies such as Java, Python, React, Flutter, FastAPI, SQL, and PostgreSQL.',
+    'about.p4': 'I especially enjoy integrating APIs, connecting systems, and automating processes. I also use artificial intelligence tools to research, learn new technologies, build features, and optimize code.',
+    'about.p5': 'I consider myself autonomous, practical, and solution-oriented, with a natural ability to learn and adapt to new tech stacks.',
+    'about.p6': 'I look to keep growing professionally by taking part in projects where I can turn ideas into functional digital solutions and contribute to building tech products.',
     
     // Contacto
     'contact.title': 'Contact',

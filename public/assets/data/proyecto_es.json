@@ -3,142 +3,179 @@
     {
       "imagen": "hundir_la_flota.webp",
       "titulo": "Hundir La Flota",
-      "descripcion": "Juego de Hundir La Flota. Creado con JAVA por terminal. Juego de 1 jugador contra la máquina.",
+      "descripcion": "Juego táctico de Hundir la Flota por consola en Java sobre matrices 10x10 con renderizado ANSI a color. Valida coordenadas alfanuméricas, orientación ortogonal y colisiones para desplegar 10 barcos (esloras 1 a 4), e incorpora una IA que acota el radio de disparo al detectar impactos y rastrea hundimientos.",
       "link": "https://github.com/MarcRoviraP/HundirLaFlotaJava",
       "plataforma": "Escritorio",
       "technologies": [
-        "Java"
+        "Java",
+        "POO",
+        "Matrices 2D",
+        "CLI / ANSI",
+        "IA Heurística"
       ],
       "folder": "hundir_la_flota"
     },
     {
       "imagen": "blackjack.webp",
       "titulo": "Blackjack",
-      "descripcion": "Juego de Blackjack. Creado con JAVA por terminal. Es multijugador. Cada jugador puede jugar contra la máquina o contra otros jugadores.",
+      "descripcion": "Juego de Blackjack en consola desarrollado en Java bajo arquitectura POO, con baraja de 52 cartas, valoración dinámica del As, sistema de apuestas con recarga de fichas y excepciones propias. Soporta multijugador local (1-7 jugadores) contra un crupier automatizado e interfaz ASCII/ANSI multicolor.",
       "link": "https://github.com/MarcRoviraP/BlackJack",
       "plataforma": "Escritorio",
       "technologies": [
-        "Java"
+        "Java",
+        "POO",
+        "Collections",
+        "CLI / ANSI",
+        "Java I/O"
       ],
       "folder": "blackjack"
     },
     {
       "imagen": "calculator.webp",
       "titulo": "Calculator",
-      "descripcion": "Calculadora hecha con JavaFX para la interfaz gráfica. Soporta operaciones aritméticas básicas y un historial de cálculos.",
+      "descripcion": "Calculadora de escritorio desarrollada en Java con arquitectura MVC y JavaFX (FXML/CSS). Opera con precisión arbitraria (BigDecimal), registros de memoria (MC/MR/MS/M+/M-), raíces, porcentajes e inversas. Incluye historial persistente con marca temporal, temas claro/oscuro e internacionalización dinámica (ES, CA, EN, JA).",
       "link": "https://github.com/MarcRoviraP/calculator/",
       "plataforma": "Escritorio",
       "technologies": [
         "Java",
-        "JavaFX"
+        "JavaFX",
+        "FXML / CSS",
+        "BigDecimal",
+        "JUnit 5",
+        "i18n"
       ],
       "folder": "calculator"
     },
     {
       "imagen": "chess.webp",
       "titulo": "Chess",
-      "descripcion": "Este es un juego de ajedrez basado en Java que utiliza JavaFX para la interfaz gráfica y PostgreSQL para el almacenamiento de datos.",
+      "descripcion": "Juego de ajedrez multijugador en Java y JavaFX (MVC/FXML) con jerarquía POO de piezas drag-and-drop. Su motor valida trayectorias, colisiones, enroques, coronación, jaque y jaque mate con reversión de jugadas ilegales. Integra persistencia en PostgreSQL (JDBC) para autenticación dual, sorteo de color, historial de partidas y ranking ELO.",
       "link": "https://github.com/MarcRoviraP/chess",
       "plataforma": "Escritorio",
       "technologies": [
         "Java",
         "JavaFX",
-        "PostgreSQL"
+        "FXML / CSS",
+        "PostgreSQL",
+        "JDBC"
       ],
       "folder": "chess"
     },
     {
       "imagen": "spaceinvaders.webp",
       "titulo": "Space Invaders",
-      "descripcion": "Juego creado con Python usando Pygame. Es un juego de 1 jugador contra la máquina. También con tema de 'Moros i Cristians'.",
+      "descripcion": "Shooter arcade 2D en Python y Pygame con arquitectura POO basada en Sprites, bucle a 60 FPS y detección de colisiones por grupos. Incluye selector de temas dinámicos ('Space Invaders' clásico y 'Moros i Cristians'), animaciones por frames, dificultad progresiva, efectos de sonido y empaquetado multiplataforma con PyInstaller.",
       "link": "https://github.com/MarcRoviraP/Space_Invaders/",
       "plataforma": "Escritorio",
       "technologies": [
         "Python",
-        "Pygame"
+        "Pygame",
+        "POO (Sprites)",
+        "PyInstaller"
       ],
       "folder": "spaceinvaders"
     },
     {
       "imagen": "shoptogether.webp",
       "titulo": "Shop Together",
-      "descripcion": "Aplicación móvil para realizar listas de la compra cooperativas. Hecho con Kotlin. Utiliza Firebase como backend y almacenamiento de datos.",
+      "descripcion": "App nativa Android en Kotlin para gestionar listas de compra colaborativas en tiempo real con Firebase (Auth, Firestore y Storage). Incluye catálogo de productos con fotos vía CameraX, sistema de amigos, chat global y privado, y módulo meteorológico por GPS con Retrofit y caché offline en Room.",
       "link": "https://github.com/MarcRoviraP/ShopTogether",
       "plataforma": "Móvil",
       "technologies": [
-        "Android",
         "Kotlin",
-        "Firebase"
+        "Android",
+        "Firebase Auth",
+        "Cloud Firestore",
+        "Room",
+        "Retrofit",
+        "CameraX"
       ],
       "folder": "shoptogether"
     },
     {
       "imagen": "mybusiness.webp",
       "titulo": "My Business",
-      "descripcion": "Aplicación móvil de gestión de negocios. Hecho con Dart y Flutter. Utiliza Supabase como backend y almacenamiento de datos.",
+      "descripcion": "Aplicación multiplataforma en Flutter para la gestión integral de empresas e inventario en tiempo real con Supabase (PostgreSQL, Realtime y Storage). Incluye control de stock por categorías, exportación de informes en PDF, chat corporativo con adjuntos, gestión de empleados por roles e incorporación mediante códigos QR.",
       "link": "https://github.com/MarcRoviraP/MyBusiness",
       "plataforma": "Móvil",
       "technologies": [
         "Dart",
         "Flutter",
-        "Supabase"
+        "Supabase",
+        "PostgreSQL",
+        "Realtime",
+        "Material 3"
       ],
       "folder": "mybusiness"
     },
     {
       "imagen": "camara_ai.webp",
       "titulo": "Camara AI",
-      "descripcion": "Aplicación móvil de cámara con inteligencia artificial. Hecho con Dart y Flutter. Utiliza la API de Gemini para el reconocimiento de imágenes y texto. Para con distintos prompts mostrar diferentes resultados.",
+      "descripcion": "Aplicación móvil de visión multimodal en Flutter impulsada por Gemini 2.5 Flash. Captura o importa imágenes para ejecutar análisis especializados (escenas, productos, fauna y extracción semántica de texto), manteniendo sesiones de chat contextuales con respuestas en Markdown, historial persistente e internacionalización ES/EN.",
       "link": "https://github.com/MarcRoviraP/camara_ai",
       "plataforma": "Móvil",
       "technologies": [
         "Dart",
         "Flutter",
-        "Gemini"
+        "Gemini 2.5 Flash",
+        "Material 3",
+        "Markdown",
+        "i18n"
       ],
       "folder": "camara_ai"
     },
     {
       "imagen": "mcs_ico.webp",
       "titulo": "MCSManager",
-      "descripcion": "Gestor ligero y moderno para servidores Minecraft Java. Crea, configura y administra mundos Vanilla, Forge, Fabric o NeoForge en 1 clic sin consolas. Multiplataforma (Windows / Linux) y sin líneas de comando.",
+      "descripcion": "Aplicación de escritorio en Python y PyQt6 que automatiza el despliegue y administración de servidores Minecraft Java (Vanilla, Forge, Fabric y NeoForge) sin usar consola. Integra búsqueda e instalación de mods vía API de Modrinth, gestión de whitelist con avatares de Mojang, edición visual de server.properties y caché asíncrona multihilo.",
       "link": "https://github.com/MarcRoviraP/Gestor_Minecraft_Server",
       "plataforma": "Escritorio",
       "technologies": [
         "Python",
-        "PyQt"
+        "PyQt6",
+        "Asyncio / Aiohttp",
+        "Multithreading",
+        "Modrinth API",
+        "Mojang API"
       ],
       "folder": "mcs_ico"
     },
     {
       "imagen": "myOptimizer.webp",
       "titulo": "MyOptimizer",
-      "descripcion": "Aplicación de escritorio para Windows que automatiza la organización y optimización de archivos. Clasifica ficheros por extensión, elimina duplicados inteligentemente y gestiona perfiles mediante una interfaz gráfica, sin necesidad de editar código.",
+      "descripcion": "Aplicación de escritorio en Python y Flet que automatiza la clasificación de archivos y la eliminación de duplicados. Integra deduplicación multihilo (ThreadPoolExecutor) en tres etapas (agrupación por tamaño, hash SHA-256 parcial de 64 KB y hash completo), perfiles JSON persistentes, editor de árbol con drag & drop y vista previa asíncrona.",
       "link": "https://github.com/MarcRoviraP/MyOptimizer",
       "plataforma": "Escritorio",
       "technologies": [
         "Python",
-        "Flet"
+        "Flet",
+        "ThreadPoolExecutor",
+        "SHA-256",
+        "JSON Profiles"
       ],
       "folder": "myOptimizer"
     },
     {
       "imagen": "data_detective.webp",
       "titulo": "Data Detective - VLC Urban Intel",
-      "descripcion": "Plataforma de inteligencia urbana para Valencia. Centraliza datos en tiempo real e históricos de tráfico (DGT), calidad del aire (GVA) y meteorología (AVAMET/AEMET). Incluye visualización avanzada en mapas, análisis de tendencias y exportación de informes técnicos.",
+      "descripcion": "Plataforma geoespacial en Python y Flet que fusiona telemetría urbana de Valencia en tiempo real (APIs ArcGIS de tráfico y aire GVA, scraping de AVAMET) con series históricas en Parquet y JSON (1994–2026, AEMET y CKAN). Incluye mapas interactivos multicapa, analítica con Matplotlib y exportación de informes ejecutivos en PDF con ReportLab.",
       "link": "https://github.com/MarcRoviraP/Data-Detective",
       "plataforma": "Escritorio",
       "technologies": [
         "Python",
         "Flet",
-        "Pandas"
+        "Pandas",
+        "Parquet",
+        "Matplotlib",
+        "ReportLab",
+        "ArcGIS / AEMET"
       ],
       "folder": "data_detective"
     },
     {
       "imagen": "datafuelle.webp",
       "titulo": "DataFuelle",
-      "descripcion": "Aplicación web reactiva para consultar precios de combustible en tiempo real en España. Incluye mapa interactivo con semáforo de precios, gestión de descuentos personalizados y optimización para dispositivos móviles.",
+      "descripcion": "Plataforma geoespacial para optimizar el repostaje en España que sincroniza precios de MITECO con Supabase y consulta series históricas Parquet en el navegador vía DuckDB WASM. Calcula el coste real (litros, consumo L/100km, trayecto y descuentos €/L), integra mapas Leaflet con rutas OSRM y predicción ML/Gemini.",
       "link": "https://github.com/MarcRoviraP/datafuelle",
       "url_web": "https://datafuelle.netlify.app/",
       "plataforma": "Web",
@@ -149,33 +186,39 @@
         "Tailwind",
         "Leaflet",
         "Supabase",
-        "Zustand"
+        "DuckDB WASM"
       ],
       "folder": "datafuelle"
     },
     {
       "imagen": "deeptutor.webp",
       "titulo": "DeepTutor",
-      "descripcion": "Plataforma web de aprendizaje de programación con un tutor virtual basado en Inteligencia Artificial. Conecta teoría y práctica mediante un IDE integrado para ejecutar código (Python, Lua, Java) de forma segura. Utiliza RAG con PostgreSQL y pgvector para ofrecer mentoría personalizada adaptada al nivel del estudiante.",
+      "descripcion": "Plataforma full-stack de mentoría de programación con IDE Monaco conectado por WebSocket a servidores LSP, ejecución segura de código en Python, Lua y Java, y tutor 3D interactivo (Three.js + Piper TTS). Integra arquitectura RAG sobre PostgreSQL y pgvector con embeddings semánticos y orquestación multi-LLM (Gemini 2.5 y Llama 3.3).",
       "link": "https://github.com/MarcRoviraP/DeepTutor",
       "plataforma": "Web",
       "technologies": [
-        "IA",
-        "RAG",
+        "React",
+        "Node.js",
         "PostgreSQL",
-        "pgvector"
+        "pgvector (RAG)",
+        "Monaco LSP",
+        "Three.js",
+        "Gemini AI"
       ],
       "folder": "deeptutor"
     },
     {
-      "imagen": "stockcounter.png",
+      "imagen": "stockcounter.webp",
       "titulo": "Stock Counter",
-      "descripcion": "Aplicación móvil y multiplataforma para control de stock e inventario en tiempo real. Soporta ajustes incrementales, auditoría de cambios y métricas de balance. Desarrollada con arquitectura limpia y TDD.",
+      "descripcion": "Aplicación móvil y multiplataforma en Flutter para el conteo de palets y control de producción por turno en tiempo real. Calcula el stock final y neto producido a partir de cajas completas, piezas sueltas y saldo inicial, con empaquetado automático de sueltas a caja, desglose de fórmulas y diseño Material 3 bajo Clean Architecture y TDD.",
       "link": "https://github.com/MarcRoviraP/StockCounter",
       "plataforma": "Móvil",
       "technologies": [
         "Dart",
-        "Flutter"
+        "Flutter",
+        "Material 3",
+        "Clean Architecture",
+        "TDD"
       ],
       "folder": "stockcounter"
     }
